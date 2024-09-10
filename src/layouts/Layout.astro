@@ -1,5 +1,4 @@
 ---
-import { NavbarLayout, NavbarItems } from '../components/Navbar/';
 import { FooterLayout, FooterContent } from '../components/Footer';
 
 interface Props {
@@ -47,9 +46,6 @@ const { title } = Astro.props;
   </head>
   <body class="scrollbar-hide">
     <div class="gradient-background">
-      <NavbarLayout>
-        <NavbarItems />
-      </NavbarLayout>
       <main>
         <slot />
       </main>
@@ -95,7 +91,7 @@ const { title } = Astro.props;
   }
 
   body {
-    margin: 0;
+    margin-bottom: auto;
     padding: 0;
     overflow-x: hidden;
   }
