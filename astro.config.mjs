@@ -9,4 +9,6 @@ import vue from '@astrojs/vue';
 export default defineConfig({
   integrations: [tailwind(), vue()],
   devToolbar: { enabled: false },
+  site: 'https://tacoenjoyer.github.io',
+  base: 'gdvnps-web-but-page-idk',
 });
