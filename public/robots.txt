@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard/account/
+Disallow: /dashboard/clan/
+Disallow: /dashboard/lang/
+Disallow: /dashboard/reupload/
+Disallow: /dashboard/sfxs/
+Disallow: /dashboard/songs/
+Disallow: /dashboard/stats/
+
+User-agent: Googlebot-Image
+Disallow: /

@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarLayout from '../components/Navbar/NavbarLayout.astro';
+---
+
+<Layout title="Tải xuống GDVNPS">
+  <NavbarLayout>
+    <!-- Nội dung NavbarLayout ở đây -->
+  </NavbarLayout>
+
+  <main class="flex flex-col items-center justify-center min-h-screen p-4">
+    <h1 class="text-6xl font-bold mb-8 gradient-text">Tải xuống GDVNPS</h1>
+
+    <div
+      class="max-w-3xl w-full bg-white bg-opacity-10 rounded-lg p-8 mb-8 flex flex-col items-center text-center"
+    >
+      <h2 class="text-2xl font-semibold text-white mb-4">Hướng dẫn cài đặt</h2>
+      <ol class="list-decimal list-inside text-white space-y-2 text-left">
+        <li>Tải xuống file nén từ GitHub.</li>
+        <li>Giải nén file (nên dùng 7-zip hoặc winrar).</li>
+        <li>Chết Triple spikes liên tục trong 56 lần!</li>
+      </ol>
+    </div>
+
+    <a
+      href="https://github.com/TacoEnjoyer/gdvnps/releases/latest"
+      class="download-button flex items-center justify-center"
+    >
+      Tải xuống từ GitHub
+    </a>
+
+    <div class="mt-8 text-white text-center">
+      <p>Phiên bản mới nhất: <span class="font-semibold">v1.0.4</span></p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pusab&display=swap');
+
+  .gradient-text {
+    font-family: 'Pusab', sans-serif;
+    background: linear-gradient(-45deg, #ffd900, #ff2600, #ffee00, #ff0000);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-text 10s ease infinite;
+  }
+
+  @keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #ff9900, #ff4800);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .download-button:hover {
+    transform: scale(1.05);
+  }
+</style>

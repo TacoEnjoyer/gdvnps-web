@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarLayout from '../components/Navbar/NavbarLayout.astro';
+---
+
+<Layout title="GDVNPS">
+  <NavbarLayout>
+    <!-- Nội dung NavbarLayout ở đây -->
+  </NavbarLayout>
+
+  <main class="flex flex-col items-center justify-center min-h-screen">
+    <div class="text-center">
+      <h2 class="text-3xl font-semibold text-white mb-2">Chào mừng bạn đến với</h2>
+      <h1 class="text-6xl font-bold mb-8 gradient-text">GDVNPS</h1>
+    </div>
+    <p class="font-main mb-8">GDVNPS là một dự án máy chủ GDPS dành cho người Việt.</p>
+
+    <a href="/dashboard" class="dashboard-button"> Đi đến Dashboard </a>
+  </main>
+</Layout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pusab&display=swap');
+
+  body {
+    overflow-y: auto;
+  }
+  .gradient-text {
+    font-family: 'Pusab', sans-serif;
+    background: linear-gradient(-45deg, #ffd900, #ff2600, #ffee00, #ff0000);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-text 10s ease infinite;
+  }
+  @keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .dashboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #ff9900, #ff4800);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .dashboard-button:hover {
+    transform: scale(1.05);
+  }
+</style>

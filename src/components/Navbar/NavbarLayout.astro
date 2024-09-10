@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import GDPS_Logo from '../../assets/gdps_icon.jpg';
+import NavbarItems from './NavbarItems.astro';
+---
+
+<nav class="w-full flex items-center justify-between fixed p-3.5 #1c1917 backdrop-blur-md">
+  <div class="flex items-center">
+    <a href="/" class="flex items-center">
+      <Image
+        class="rounded-2xl pointer-events-none"
+        src={GDPS_Logo}
+        alt="GDVNPS's Logo"
+        width={40}
+        height={40}
+      />
+      <span class="ml-2 text-xl font-semibold">GDVNPS web v2</span>
+    </a>
+  </div>
+  <NavbarItems />
+</nav>
